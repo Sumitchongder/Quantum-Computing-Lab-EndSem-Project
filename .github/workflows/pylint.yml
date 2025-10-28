@@ -1,4 +1,6 @@
 name: qcl
+permissions:
+  contents: read
 
 on: [push]
 jobs:
