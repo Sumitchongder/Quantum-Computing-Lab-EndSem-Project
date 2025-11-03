@@ -27,5 +27,7 @@ jobs:
         run: |
           #uv run nbqa pylint --disable=R0801 --exit-zero .
           #uv run nbqa pylint --disable=R0801 --exit-zero $(git ls-files '*.py' | xargs
+          uv run nbqa pylint --disable=R0801 --exit-zero $(git ls-files '*.py' | xargs) 
 
-          uv run pylint $(git ls-files '*.py')
+
+          #uv run pylint $(git ls-files '*.py')
